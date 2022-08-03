@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20211230140548_FilmCategoryAndDonation.cs" />
+    <Compile Remove="Migrations\20211230140548_FilmCategoryAndDonation.Designer.cs" />
+    <Compile Remove="Migrations\20211230141406_FilmCategory.cs" />
+    <Compile Remove="Migrations\20211230141406_FilmCategory.Designer.cs" />
+    <Compile Remove="Migrations\20211230141548_FilmCategoryAndDonation.cs" />
+    <Compile Remove="Migrations\20211230141548_FilmCategoryAndDonation.Designer.cs" />
+    <Compile Remove="Migrations\20211230150901_FilmMembers.cs" />
+    <Compile Remove="Migrations\20211230150901_FilmMembers.Designer.cs" />
+    <Compile Remove="Migrations\20211231171322_Images.cs" />
+    <Compile Remove="Migrations\20211231171322_Images.Designer.cs" />
+    <Compile Remove="Migrations\20211231173027_Funds.cs" />
+    <Compile Remove="Migrations\20211231173027_Funds.Designer.cs" />
+    <Compile Remove="Migrations\20220111193659_UserProfile.cs" />
+    <Compile Remove="Migrations\20220111193659_UserProfile.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeepMovie.Common\DeepMovie.Common.csproj" />
+  </ItemGroup>
+
+</Project>
